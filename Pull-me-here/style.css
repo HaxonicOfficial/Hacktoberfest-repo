@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2em;
+  color: rgb(90, 90, 90);
+}
+.img1 {
+  background-image: url(images/bg.jpg);
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.img2 {
+  background-image: url(images/1.jpg);
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.img3 {
+  background-image: url(images/2.jpg);
+  min-height: 350px;
+  background-size: cover;
+  background-position: center;
+}
+.img1, .img2, .img3 {
+  position: relative;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.heading {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: #000;
+  font-family: Abel, serif;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 15px;
+  color: azure;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section1 {
+  background-color: rgb(245, 245, 245);
+  color: rgb(51, 51, 51);
+}
+.section2 {
+  background:linear-gradient(45deg, rgb(34, 34, 34), rgb(24, 24, 24));
+  opacity: 0.9;
+  color: rgb(245, 245, 245);
+}
+.section3 {
+  background-color: rgb(245, 245, 245);
+  color: rgb(51, 51, 51);
+}
+h2 {
+  font-family: Abel, serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+p {
+  font-family: Abel, serif;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+@media only screen and (min-width: 300px) {
+  span {
+    line-height: 1.6em;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .img1, .img2, .img3 {
+    background-attachment: scroll;
+  }
+}
